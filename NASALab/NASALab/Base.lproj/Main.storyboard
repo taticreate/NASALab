@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NASALab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="39B-vZ-3O2">
+                                <rect key="frame" x="87" y="59" width="240" height="128"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kSI-gZ-q70">
+                                <rect key="frame" x="59" y="195" width="296" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="AM3-h7-EYl"/>
+                                </constraints>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEd-we-pVB">
+                                <rect key="frame" x="38" y="379" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="445054099.20905995">
+                                    <!--2015-02-08 02:08:19 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="113047200">
+                                    <!--2004-08-01 10:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="697374000">
+                                    <!--2023-02-06 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgL-oH-FZv">
+                                <rect key="frame" x="31" y="636" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WmB-si-wjG">
+                                <rect key="frame" x="31" y="636" width="320" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="39B-vZ-3O2" firstAttribute="centerX" secondItem="kSI-gZ-q70" secondAttribute="centerX" id="0p3-ej-msq"/>
+                            <constraint firstItem="DgL-oH-FZv" firstAttribute="top" secondItem="WmB-si-wjG" secondAttribute="top" id="9Cj-CC-g7D"/>
+                            <constraint firstItem="39B-vZ-3O2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="AVQ-QW-TFp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WmB-si-wjG" secondAttribute="bottom" constant="10" id="B8d-Wn-x6Z"/>
+                            <constraint firstItem="39B-vZ-3O2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="EvT-3H-gLV"/>
+                            <constraint firstItem="DgL-oH-FZv" firstAttribute="leading" secondItem="WmB-si-wjG" secondAttribute="leading" id="Pa6-So-nih"/>
+                            <constraint firstItem="DgL-oH-FZv" firstAttribute="top" secondItem="QEd-we-pVB" secondAttribute="bottom" constant="41" id="PhO-0M-Uvl"/>
+                            <constraint firstItem="39B-vZ-3O2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zd3-Nm-ijC"/>
+                            <constraint firstItem="kSI-gZ-q70" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="a6A-mO-EgA"/>
+                            <constraint firstItem="QEd-we-pVB" firstAttribute="top" secondItem="kSI-gZ-q70" secondAttribute="bottom" constant="8" symbolic="YES" id="agF-OF-nap"/>
+                            <constraint firstItem="DgL-oH-FZv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="eTF-da-Gsz"/>
+                            <constraint firstItem="kSI-gZ-q70" firstAttribute="top" secondItem="39B-vZ-3O2" secondAttribute="bottom" constant="8" symbolic="YES" id="lZi-SW-Ebb"/>
+                            <constraint firstItem="QEd-we-pVB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="yYG-g4-nJS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="date" destination="QEd-we-pVB" id="AFJ-iA-7x0"/>
+                        <outlet property="imgCount" destination="DgL-oH-FZv" id="Dod-wQ-2Nf"/>
+                        <outlet property="imgList" destination="WmB-si-wjG" id="paT-Pp-kxh"/>
+                        <outlet property="mainImage" destination="39B-vZ-3O2" id="BTo-ak-Jd6"/>
+                        <outlet property="roverName" destination="kSI-gZ-q70" id="VfH-0d-gJv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
